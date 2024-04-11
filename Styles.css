@@ -1,0 +1,117 @@
+﻿.block {
+    white-space: nowrap; 
+    overflow: auto;
+}
+a{
+    display: block;
+    text-align:center;
+}
+.honk-newfont {
+           font-family: "Honk", system-ui;
+           font-optical-sizing: auto;
+           font-weight: 400;
+           font-style: normal;
+           font-variation-settings:
+                   "MORF" 15,
+                   "SHLN" 50;
+       }
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+body{
+    background-image: url('images/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:85%;
+    margin: auto;
+}
+
+
+
+#content {
+    min-height:100vh;
+    background-color: rgba(255, 255, 255, 0.85);
+    display: grid;
+    grid-template-columns: 75% auto;
+    grid-template-rows: 10% 10% 75% auto;
+    font-size: 1.5em;
+}
+header {
+    grid-row: 1 / 2; grid-column: 1 / 3; }
+nav    {
+    grid-row: 2 / 3; grid-column: 1 / 3; }
+main   {
+    grid-row: 3 / 4; grid-column: 1 / 2; }
+aside  {
+    grid-row: 3 / 4; grid-column: 2 / 3; }
+footer {
+    grid-row: 4 / 5; grid-column: 1 / 3; }
+ul{
+    list-style: none;
+}
+nav ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;}
+nav ul li {
+    border-bottom: none; 
+    margin: 0 ;}
+aside{
+    text-align: center;
+}
+
+
+header{
+    font-family: "Honk", system-ui;
+    font-size: 1.5em;
+    background-color: rgb(223, 64, 94);
+    background-image: url("images/icon.jpeg");
+    background-repeat: no-repeat;
+    background-size:contain;
+    padding: 0 0 .5em 3.5em;
+  }
+nav{
+    font-family: "Honk", system-ui;
+    font-size: 2.5em;
+    background-color: rgb(51, 214, 205);
+}
+aside{
+    background-color: rgba(79, 140, 161, 0.85);
+}
+footer{
+    background-color: rgba(255, 116, 41, 0.85);
+    text-align: center;
+}
+
+h2{
+    font-family: "Honk", system-ui;
+    font-size: 2.0em;
+}
+#photo{
+    background-color: rgba(255, 255, 255, 0.55);
+}
+
+
+.property{
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    grid-template-rows: auto auto;
+}
+#pro1{
+    grid-row: 1 / 2; grid-column: 1 / 2;
+    margin:0 auto;
+ 
+}
+#pro2{
+    grid-row: 1 / 2; grid-column: 2 / 3;
+    margin:0 auto;
+    
+}
+#pro3{
+    grid-row: 1 / 2; grid-column: 3 / 4;
+    margin:0 auto;
+  
+}
